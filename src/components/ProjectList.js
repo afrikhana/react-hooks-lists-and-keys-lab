@@ -6,7 +6,12 @@ function ProjectList({ projects }) {
   return (
     <div id="projects">
       <h2>My Projects</h2>
-      <div id="project-list">{/* render ProjectItem components here */}</div>
+      <div id="project-list">
+        {/* render ProjectItem components here */}
+      <h1>{projects.name}</h1>
+      <p>{projects.about}</p>
+      <li>{projects.technologies}</li>
+      </div>
     </div>
   );
 }
